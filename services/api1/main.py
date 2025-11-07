@@ -4,5 +4,5 @@ def lambda_handler(event, context):
     # TODO implement
     return {
         'statusCode': 200,
-        'body': json.dumps('API 001 is working!')
+        'body': json.dumps({"message": "API 1.0.1 is working!"})
     }

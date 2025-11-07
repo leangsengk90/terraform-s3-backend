@@ -1,3 +1,8 @@
+# AWS Region Variable
+variable "aws_region" {
+  type    = string
+}
+
 variable "services_list" {
   type = list(string)
 }

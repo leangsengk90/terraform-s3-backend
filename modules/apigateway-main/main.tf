@@ -93,7 +93,7 @@ resource "aws_api_gateway_deployment" "services_deployment" {
   }
 }
 
-# Create Stage for the API Gateway
+#Create Stage for the API Gateway
 resource "aws_api_gateway_stage" "services_stage" {
   stage_name    = "${terraform.workspace}"
   rest_api_id   = aws_api_gateway_rest_api.services_rest_api.id

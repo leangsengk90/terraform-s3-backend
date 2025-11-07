@@ -1,0 +1,15 @@
+init ENV:
+    rm -rf .terraform && rm -rf .terraform.lock.hcl && \
+    terraform init -backend-config=../backends/static-website-{{ENV}}.hcl
+
+plan ENV: 
+    terraform workspace select {{ENV}} || terraform workspace new {{ENV}}
+    terraform plan -var-file=../variables/{{ENV}}.tfvars -out=../plans/static-website-{{ENV}}.plan
+
+apply ENV: 
+    terraform workspace select {{ENV}}
+    terraform apply ../plans/static-website-{{ENV}}.plan
+
+destroy ENV: 
+    terraform workspace select {{ENV}}
+    terraform destroy -var-file=../variables/{{ENV}}.tfvars
