@@ -14,7 +14,33 @@ just destroy
 Type: "yes"
 ```
 
->**<span style="color:#ff5555"> NOTE:</span> Please install `just` command in your PC!
->
+* Create Lambda and Api Gateway
+```
+cd main
+just init dev
+just plan dev
+just apply dev
+```
 
-https://example.com
+* Destroy Lambda and Api Gateway
+```
+just destroy 
+Type: "yes"
+```
+
+* Create S3 with Cloudfront
+```
+cd main
+just init dev
+just plan dev
+just apply dev
+```
+
+* Destroy S3 with Cloudfront
+```
+just destroy 
+Type: "yes"
+```
+
+><span style="color:#ff5555"> NOTE:</span> Please install `just` command in your PC!
+>
