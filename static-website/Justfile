@@ -1,10 +1,10 @@
 clean:
     rm -rf .terraform && rm -rf .terraform.lock.hcl && rm -rf ../plans/*
-    
-init ENV:
+
+init ENV: 
     terraform init -backend-config=../backends/static-website-{{ENV}}.hcl
 
-plan ENV: 
+plan ENV: (init ENV)
     terraform workspace select {{ENV}} || terraform workspace new {{ENV}}
     terraform plan -var-file=../variables/{{ENV}}.tfvars -out=../plans/static-website-{{ENV}}.plan
 

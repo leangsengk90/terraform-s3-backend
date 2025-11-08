@@ -4,7 +4,7 @@ clean:
 init ENV:
     terraform init -backend-config=../backends/{{ENV}}.hcl
 
-plan ENV: 
+plan ENV: (init ENV)
     terraform workspace select {{ENV}} || terraform workspace new {{ENV}}
     terraform plan -var-file=../variables/{{ENV}}.tfvars -out=../plans/{{ENV}}.plan
 

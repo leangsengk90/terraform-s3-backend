@@ -2,7 +2,7 @@
 aws_region = "us-east-1"
 
 # Services to deploy
-services_list = ["api2"]
+services_list = ["api2", "api3"]
 
 # Lambda configurations
 lambda_handler = "main.lambda_handler"

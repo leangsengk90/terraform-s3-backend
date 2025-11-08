@@ -45,5 +45,5 @@ just destroy
 Type: "yes"
 ```
 
->NOTE:Please install `just` command in your PC!
+> NOTE: Please install `just` command in your PC!
 >
