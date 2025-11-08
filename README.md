@@ -3,6 +3,7 @@
 * Create Remote Backend to Store State
 ```
 cd remote-state
+just clean
 just init dev
 just plan dev
 just apply dev
@@ -17,6 +18,7 @@ Type: "yes"
 * Create Lambda and Api Gateway
 ```
 cd main
+just clean
 just init dev
 just plan dev
 just apply dev
@@ -31,6 +33,7 @@ Type: "yes"
 * Create S3 with Cloudfront
 ```
 cd static-website
+just clean
 just init dev
 just plan dev
 just apply dev

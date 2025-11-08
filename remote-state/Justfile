@@ -1,5 +1,7 @@
+clean:
+    rm -rf .terraform && rm -rf .terraform.lock.hcl && rm -rf ../plans/*
+
 init ENV: 
-    rm -rf .terraform && rm -rf .terraform.lock.hcl && \
     terraform init
 
 plan ENV: 
