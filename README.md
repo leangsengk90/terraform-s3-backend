@@ -30,7 +30,7 @@ Type: "yes"
 
 * Create S3 with Cloudfront
 ```
-cd main
+cd static-website
 just init dev
 just plan dev
 just apply dev
@@ -42,5 +42,5 @@ just destroy
 Type: "yes"
 ```
 
-><span style="color:#ff5555"> NOTE:</span> Please install `just` command in your PC!
+>NOTE:Please install `just` command in your PC!
 >
