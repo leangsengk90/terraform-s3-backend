@@ -11,10 +11,10 @@ just apply dev
 * Destroy Remote Backend to Store State
 ```
 just destroy 
-Type: `yes`
+Type: "yes"
 ```
 
-> NOTE: Please install just command in your PC!
+>**<span style="color:#ff5555"> NOTE:</span> Please install `just` command in your PC!
 >
 
 https://example.com
