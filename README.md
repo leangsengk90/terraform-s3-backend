@@ -16,5 +16,7 @@ Type: "yes"
 ```
 
 > NOTE: Please install just command
+>
+
 `inline`
-[Link text] (https://example.com)
+[https://example.com]
